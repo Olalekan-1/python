@@ -1,2 +1,2 @@
 # python_practice
-# This repo contain exercises from python tutorial
+This repo contain exercises from python tutorial
