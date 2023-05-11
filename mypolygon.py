@@ -53,11 +53,29 @@ def circle(t, r):
     length = circum / n
     polygon(t, length, n)
 
-circle(bob, 35)
+# circle(bob, 35)
 
 turtle.mainloop()
 
+"""def arc(t, angle, r):
+    length = 2 * math.pi * r * angle / 360
+    n = int(length / 3) + 1
+    seg = length / n
+    seg_angle = angle / n
+    for i in range(n):
+        t.fd(seg)
+        t.lt(seg_angle)"""
 
+def arc(t, r, angle):
+    arc_length = 2 * math.pi * r * angle / 360
+    n = int(arc_length / 3) + 1
+    step_length = arc_length / n
+    step_angle = angle / n
+    for i in range(n):
+        t.fd(step_length)
+        t.rt(step_angle)
+
+arc(bob, 30, 10)
 
 
 

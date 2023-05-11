@@ -1,3 +1,3 @@
 # python_practice
-This repo contain exercises @Think python by Allen Downey
+This repo contain exercises from Think python by Allen Downey
 
